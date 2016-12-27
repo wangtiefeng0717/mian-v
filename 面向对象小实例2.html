@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>面向对象小实例2</title>
+</head>
+<body>
+	<input id='btn1' type="button" value="按钮">
+
+	<script>
+		function Bbb(){
+			var _this = this;
+			this.b=5;
+			document.getElementById('btn1').onclick = function(){
+				_this.show();
+			};
+
+		}
+		Bbb.prototype.show = function(){
+			alert(this.b);
+		}
+			
+		new Bbb();
+		
+	</script>
+</body>
+</html>

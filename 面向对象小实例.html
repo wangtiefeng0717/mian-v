@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>面向对象小实例</title>
+</head>
+<body>
+<script>
+	function Aaa(){
+		var _this = this;
+		this.a = 12;
+		setInterval(function(){
+			_this.show();
+		},1000);
+	}
+	Aaa.prototype.show = function(){
+		alert(this.a);
+	}
+	var obj = new Aaa;
+	// obj.show();
+	
+</script>
+</body>
+</html>
